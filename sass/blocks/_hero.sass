@@ -1,0 +1,124 @@
+.hero
+    &__container
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        padding-bottom: 70px
+    &__left
+        width: 728px
+        height: 450px
+        background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+        border-radius: 8px
+        margin: 0
+        padding: 0
+    &__right
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        flex-wrap: wrap
+    &__booking
+        width: 350px
+        height: 210px
+        background: #0A223D
+        border-radius: 8px
+        padding: 29px 29px 26px 26px
+        color: #ffffff
+        &-first
+            display: flex
+            justify-content: space-between
+        &-second
+            display: flex
+            justify-content: space-between
+            margin-top: 9px
+        &-button
+            margin-top: 17px
+            width: 100%
+            cursor: pointer
+            height: 45px
+            background: #EC1F46
+            border-radius: 4px
+            border: none
+            font-family: 'Nunito', sans-serif
+            font-style: normal
+            font-weight: 600
+            font-size: 14px
+            line-height: 19px
+            color: inherit
+    &__price
+        &-first
+            font-family: 'Nunito', sans-serif
+            font-size: 10px
+            line-height: 14px
+            font-weight: 400
+            display: block
+        &-second
+            font-family: 'Nunito', sans-serif
+            font-weight: 800
+            font-size: 24px
+            line-height: 33px
+            display: block
+        &-third
+            font-family: 'Nunito', sans-serif
+            font-size: 12px
+            line-height: 16px
+            font-weight: 400
+            display: block
+            margin-top: -4px
+    &__descr
+        &-to-price
+            margin-top: 4px
+            &-text
+                font-family: 'Nunito', sans-serif
+                font-weight: 400
+                font-size: 12px
+                line-height: 16px
+        &-guests
+            width: 80px
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &-room
+            margin-top: 8px
+            width: 80px
+            display: flex
+            justify-content: space-between
+            align-items: center
+    &__quick-booking
+        font-family: 'Nunito', sans-serif
+        font-weight: 600
+        font-size: 18px
+        line-height: 25px
+    &__tel
+        display: flex
+        align-items: center
+        &-a
+            font-family: 'Nunito', sans-serif
+            font-weight: 600
+            font-size: 18px
+            line-height: 25px
+            color: inherit
+            text-decoration: none
+            margin-left: 8px
+    &__map
+        width: 347px
+        height: 213px
+        background: #0A223D
+    &__img-first
+        background-image: url("../img/slide-one.jpg")
+    &__img-second
+        background-image: url("../img/slide-two.jpg")
+    &__img-third
+        background-image: url("../img/slide-three.jpg")
+.swiper-slide
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        background: linear-gradient(rgba(0, 122, 223, 0.48), rgba(255, 255, 255, 0.128))
+        width: 100%
+        height: 100%
