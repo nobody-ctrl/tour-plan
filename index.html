@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tour Plan, Booking Service</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="css/normalize.css">
@@ -195,7 +195,7 @@
                     </div>
                     <!-- /.hero__booking -->
                     <div class="hero__map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80996.30250135194!2d5.529055718195776!3d50.62461905690224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f74b8eacfcfb%3A0x40099ab2f4d6b40!2z0JvRjNC10LYsINCR0LXQu9GM0LPQuNGP!5e0!3m2!1sru!2sde!4v1609158896006!5m2!1sru!2sde" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80996.30250135194!2d5.529055718195776!3d50.62461905690224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f74b8eacfcfb%3A0x40099ab2f4d6b40!2z0JvRjNC10LYsINCR0LXQu9GM0LPQuNGP!5e0!3m2!1sru!2sde!4v1609158896006!5m2!1sru!2sde" width="100%" height="100%" frameborder="0" style="border-radius:10px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                     <!-- /.hero__map -->
                 </div>
@@ -204,7 +204,32 @@
             <!-- /.container -->
         </section>
         <!-- /.hero -->
+        <section class="newsletter">
+            <div class="newsletter-container container">
+                <h2 class="newsletter__text">
+                    <span class="newsletter__subscribe">subscribe to our</span>
+                    <span class="newsletter__subscribe-newsletter">Newsletter</span>
+                </h2>
+                <!-- /.newsletter__text -->
+                <div class="newsletter__search">
+                    <form action="#" class="newsletter__form form">
+                        <input type="text" class="form__input" placeholder="Your email address">
+                        <button class="form__button">
+                            Send
+                        </button>
+                    </form>
+                </div>
+                <!-- /.newsletter__search -->
+            </div>
+            <!-- /.newsletter-container -->
+        </section>
+        <!-- /.newsletter -->
+
         <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/parallax.min.js"></script>
+        <script>
+            $(".newsletter").parallax({imageSrc: "./img/newsletter-background.jpg", speed: 0.4})
+        </script>
         <script src="js/main.js"></script>
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/swiper.js"></script>
