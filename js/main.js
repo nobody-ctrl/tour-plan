@@ -7,3 +7,20 @@ $('.header__mobile-menu').click(function(){
     $('.header__container-second').toggleClass('header__container-mobile');
     $('body').toggleClass('body-hidden');
 })
+
+$('.show-me-window').click(function(){
+    $('.hidden-window').addClass('visible-window');
+    $('body').toggleClass('body-hidden-two');
+})
+
+var mySwiperOne = new Swiper('.swiper-container-reviews', {
+    // Optional parameters
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+})
+

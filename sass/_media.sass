@@ -3,24 +3,57 @@
         width: 1000px
     .hero__left
         width: 620px
+    .activities
+        &__photo
+            width: 235px
+        &__block-with-photo
+            width: 235px
+        &__descr-last
+            width: 180px
+@media(max-width: 1370px)
+    .footer
+        &__social-network
+            margin-top: 20px
 @media (max-width: 1300px)
     .container
         width: 960px
         border: 1px solid yellow
     .hero__left
         width: 580px
+    .activities
+        &__photo
+            width: 225px
+        &__block-with-photo
+            width: 225px
 @media (max-width: 1200px)
     .container
         width: 900px
         border: 1px solid green
     .hero__left
         width: 520px
+    .activities
+        &__photo
+            width: 213.75px
+        &__block-with-photo
+            width: 213.75px
 @media (max-width: 1080px)
     .container
         width: 850px
         border: 1px solid red
     .hero__left
         width: 470px
+    .activities
+        &__photo
+            width: 410px
+        &__block-with-photo
+            width: 410px
+            &:last-child
+                margin-top: 30px
+            &:nth-last-child(2)
+                margin-top: 30px
+    .footer
+        &__social-network
+            margin-top: 50px
 @media (max-width: 992px)
     .container
         width: 800px
@@ -42,6 +75,47 @@
     .newsletter
         padding-top: 92px
         padding-bottom: 93px
+    .activities
+        &__photo
+            width: 390px
+        &__block-with-photo
+            width: 390px
+            &:last-child
+                margin-top: 20px
+            &:nth-last-child(2)
+                margin-top: 20px
+    .footer
+        padding-bottom: 33px
+        padding-top: 73px
+        &-wrapper
+            grid-template-columns: repeat(6, 1fr)
+            grid-gap: 40px
+        &__logo
+            grid-row: 1 / 2
+            grid-column: span 2
+        &__social-network
+            grid-row: 1 / 2
+            grid-column: span 4
+            align-self: center
+        &__categories
+            grid-row: 2 / 3
+            grid-column: span 2
+        &__additional
+            grid-column: span 2
+        &__legal
+            grid-column: span 2
+        &__contact-details
+            grid-row: 3
+            grid-column: span 5
+        &__contacts-form
+            grid-row: 4
+            grid-column: span 5
+        &__disclaimer-and-others
+            grid-column: 1/3
+            margin-top: 56px
+        &__social-icons
+            grid-column: 5/7
+            margin-top: 56px
 @media (max-width: 868px)
     .container
         width: 720px
@@ -76,6 +150,15 @@
         &__map
             width: 340px
             height: 210px
+    .activities
+        &__photo
+            width: 350px
+        &__block-with-photo
+            width: 350px
+            &:last-child
+                margin-top: 20px
+            &:nth-last-child(2)
+                margin-top: 20px
 @media (max-width: 768px)
     .container
         width: 700px
@@ -88,6 +171,53 @@
             &-second
                 padding-left: 14px
                 padding-right: 14px
+    .activities
+        padding-bottom: 70px
+        &__photo
+            width: 340px
+        &__block-with-photo
+            width: 340px
+            &:last-child
+                margin-top: 20px
+            &:nth-last-child(2)
+                margin-top: 20px
+    .footer
+        &-wrapper
+            column-gap: 0px
+        &__contact-details
+            grid-column: span 6
+        &__contacts-form
+            grid-column: span 6
+        &__logo
+            width: 104px
+            height: 120.29px
+            margin-top: 0
+        &__social-network
+            margin-top: 0
+            margin-left: -46px
+        &__categories
+            margin-left: 0
+        &__additional
+            margin-left: -33px
+        &__legal
+            margin-right: 12px
+        &__contact-details
+            margin-left: 0
+            margin-top: 31px
+        &__contacts-form
+            margin-top: -3px
+            margin-left: 0
+        &__input
+            max-width: 255px
+        &__contacts-form
+            max-width: 540px
+        &__disclaimer-and-others
+            margin-top: 23px
+        &__social-icons
+            margin-top: 10px
+    .logo
+        width: 96px
+        height: 110px
 @media (max-width: 740px)
     .container
         width: 650px
@@ -167,6 +297,15 @@
             margin-top: 20px
         &__right
             margin-top: 20px
+    .activities
+        &__photo
+            width: 315px
+        &__block-with-photo
+            width: 315px
+            &:last-child
+                margin-top: 20px
+            &:nth-last-child(2)
+                margin-top: 20px
 @media (max-width: 690px)
     .container
         width: 87.5%
@@ -211,6 +350,31 @@
                 font-size: 30px
                 line-height: 38px
                 margin-top: 5px
+    .activities
+        &__photo
+            width: 100%
+        &__block-with-photo
+            width: 48.5%
+            &:last-child
+                margin-top: 10px
+            &:nth-last-child(2)
+                margin-top: 15px
+            &:first-child
+                margin-right: 15px
+    .footer
+        &__additional
+            margin-left: 0
+        &__legal
+            margin-left: 30px
+@media(max-width: 600px)
+    .activities
+        &__photo
+            width: 100%
+        &__block-with-photo
+            width: 48%
+    .footer
+        &__additional
+            margin-left: 20px
 @media (max-width: 550px)
     .header
         &__search
@@ -228,6 +392,116 @@
             left: 10px
         &-next-one
             right: 10px
+    .footer
+        padding-bottom: 21px
+        padding-top: 69px
+        &-wrapper
+            grid-template-columns: 1fr
+            grid-template-rows: repeat(6, min-content)
+            row-gap: 30px
+        &__logo
+            grid-column: 1 / 2
+            grid-row: 1 / 2
+            margin-left: 5px
+        &__social-network
+            grid-column: 1 / 2
+            grid-row: 2 / 3
+            flex-direction: column
+            min-height: 67px
+            justify-content: space-between
+            margin-top: 2px
+            margin-left: 4px
+        &__categories
+            grid-row: 5 / 6
+            grid-column: 1 / 2
+            margin-left: 5px
+        &__additional
+            grid-row: 4 / 5
+            grid-column: 1 / 2
+            margin-left: 5px
+        &__legal
+            grid-row: 3 / 4
+            grid-column: 1 / 2
+            justify-self: start
+            margin-left: 5px
+        &__contact-details
+            grid-column: 1 / 2
+            grid-row: 6 / 7
+            margin-left: 0
+            margin-top: 20px
+        &__contacts-form
+            grid-column: 1 / 2
+            grid-row: 7 / 8
+        &__input
+            flex-basis: 100%
+            margin-top: 15px
+            margin-bottom: 0
+        &__message
+            margin-top: 15px
+        &__disclaimer-and-others
+            grid-column: 1/2
+            grid-row: 8 / 9
+            width: 90%
+            margin: 0
+            justify-self: center
+            align-self: end
+            font-size: 12px
+            line-height: 15px
+            font-family: Mulish
+        &__social-icons
+            grid-column: 1/2
+            grid-row: 9 / 10
+            margin-top: 0
+            align-self: start
+            justify-self: start
+        &__text
+            &-another
+                line-height: 22.4px
+        &__ul-contacts
+            margin-left: 5px
+            margin-top: 21px
+        &__item
+            &-two
+                margin-top: 25px
+        &__contacts-form
+            margin-top: 7px
+        &__title
+            margin-bottom: 0
+        &__input
+            max-width: 100%
+        &__button
+            margin-top: 22px
+        &__info
+            flex-basis: 100%
+            margin-top: -150px
+        &__disclaimer-and-others
+            width: 100%
+            align-self: start
+        &__social-icons
+            margin-top: -45px
+    .text
+        &-one
+            margin-top: -3px
+            margin-left: -13px
+    .activities
+        padding-top: 40px
+        padding-bottom: 60px
+        &__photos
+            margin-top: 36px
+        &__photo
+            width: 100%
+        &__block-with-photo
+            width: 100%
+            margin: auto
+            margin-top: 20px
+            &:first-child
+                margin-right: 0
+                margin: auto
+                margin-top: 0
+            &:last-child
+                margin-top: 20px
+            &:nth-last-child(2)
+                margin-top: 20px
 @media (max-width: 400px)
     .container
         border: none
@@ -299,4 +573,4 @@
         &__stars
             display: none
 .container
-    display: none
+    border: none
