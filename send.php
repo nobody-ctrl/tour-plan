@@ -25,7 +25,6 @@ if(isset($_POST['email'])){
 }else{
     $email="User have not given his email";
 }
-
 // Формирование самого письма
 $title = "Заголовок письма";
 $body = "
@@ -47,11 +46,11 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'par.12092000@mail.ru'; // Логин на почте
+    $mail->Username   = 'par12092000@mail.ru'; // Логин на почте
     $mail->Password   = 'D4h7kka2n'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('par.12092000@mail.ru', 'Анастасия Петрова'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('par12092000@mail.ru', 'Анастасия Петрова'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('keinekein@yandex.ru');
