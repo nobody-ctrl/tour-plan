@@ -10,14 +10,19 @@ body
     margin: auto
 .body-hidden, .body-hidden-an
     overflow: hidden
-.arrow
+.arrow, .arrow-one
     position: relative
+    z-index: 200
 label.invalid-messages
     position: absolute
     top: -50px
     left: -210px
     color: red
-label.invalid
+label.invalid-messages-one
+    position: absolute
+    top: 0px
+    left: 10px
+label.invalid, label.invalid-messages-one
     color: red
 iframe
     border: none

@@ -93,6 +93,22 @@ $(document).ready(function(){
       wrapper: 'span'
     });
   });
+
+  $('.form-validation-another-one').each( function() {
+    $(this).validate({
+      errorClass: "invalid-messages-one",
+      messages: {
+        email: {
+          required: "Your email is required",
+          email: "Please, name@domain.com",
+        },
+      },
+      errorPlacement: function(label, element) {
+        label.addClass('arrow-one');
+        label.insertAfter(element);
+      },
+    });
+  });
   $('.form-phone').mask('+7(000) 000-00-00');
   AOS.init();
 })
