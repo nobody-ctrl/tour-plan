@@ -701,7 +701,7 @@
         &__text
             max-width: 219px
     .activities
-        padding-top: 0
+        padding-top: 90px
         &__title
             font-family: Mulish
             font-weight: 700
@@ -736,5 +736,13 @@
     .titles
         &__stars
             display: none
+@media (max-height: 530px)
+    .modal
+        &__dialog
+            overflow-y: scroll
+            max-height: 450px
+            height: 80%
+        &__form
+            margin-bottom: 40px
 .container
     border: none
