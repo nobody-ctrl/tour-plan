@@ -10,6 +10,12 @@
             width: 235px
         &__descr-last
             width: 180px
+    .swiper
+        &-button
+            &-prev
+                left: -80px
+            &-next
+                right: -80px
 @media(max-width: 1370px)
     .footer
         &__social-network
@@ -36,6 +42,15 @@
             width: 213.75px
         &__block-with-photo
             width: 213.75px
+    .swiper
+        &-button
+            &-prev
+                left: -90px
+            &-next
+                right: -90px
+    .modal
+        &__dialog
+            padding: 33px 70px
 @media (max-width: 1080px)
     .container
         width: 850px
@@ -54,6 +69,15 @@
     .footer
         &__social-network
             margin-top: 50px
+    .swiper
+        &-button
+            &-prev
+                left: -70px
+            &-next
+                right: -70px
+    label.invalid-messages
+        font-size: 14px
+        left: -180px
 @media (max-width: 992px)
     .container
         width: 800px
@@ -84,9 +108,14 @@
                 margin-top: 20px
             &:nth-last-child(2)
                 margin-top: 20px
+    .reviews
+        &__text
+            max-width: 500px
     .footer
         padding-bottom: 33px
         padding-top: 73px
+        &__input
+            max-width: 100%
         &-wrapper
             grid-template-columns: repeat(6, 1fr)
             grid-gap: 40px
@@ -116,10 +145,25 @@
         &__social-icons
             grid-column: 5/7
             margin-top: 56px
+    .modal
+        &__dialog
+            padding: 33px 45px
+    .swiper
+        &-button
+            &-prev
+                left: -40px
+            &-next
+                right: -40px
+        &-container
+            &-wrapper
+                max-width: 629px
 @media (max-width: 868px)
     .container
         width: 720px
         border: 1px solid green
+        &-title
+            font-size: 30px
+            line-height: 38px
     .header
         &__link
             font-size: 12px
@@ -159,10 +203,16 @@
                 margin-top: 20px
             &:nth-last-child(2)
                 margin-top: 20px
+    .swiper
+        &-container
+            &-wrapper
+                max-width: 579px
 @media (max-width: 768px)
     .container
         width: 700px
         border: none
+        &-title
+            margin-bottom: 50px
     .header
         &__nav
             margin-top: 22px
@@ -181,6 +231,12 @@
                 margin-top: 20px
             &:nth-last-child(2)
                 margin-top: 20px
+        &__descr-last
+            width: 200px
+    .reviews
+        margin-bottom: 22.5px
+        &__text
+            max-width: 455px
     .footer
         &-wrapper
             column-gap: 0px
@@ -218,6 +274,18 @@
     .logo
         width: 96px
         height: 110px
+    .swiper
+        &-button-next
+            right: -50px
+            margin-top: -28px
+        &-button-prev
+            left: -50px
+            margin-top: -28px
+    .modal
+        &__dialog
+            max-width: 400px
+            width: 85%
+            padding: 33px 20px
 @media (max-width: 740px)
     .container
         width: 650px
@@ -306,6 +374,10 @@
                 margin-top: 20px
             &:nth-last-child(2)
                 margin-top: 20px
+    .swiper
+        &-container
+            &-wrapper
+                max-width: 550px
 @media (max-width: 690px)
     .container
         width: 87.5%
@@ -366,6 +438,15 @@
             margin-left: 0
         &__legal
             margin-left: 30px
+    .swiper
+        &-button
+            &-prev
+                left: -20px
+            &-next
+                right: -20px
+    .reviews
+        &__text
+            max-width: 400px
 @media(max-width: 600px)
     .activities
         &__photo
@@ -375,7 +456,18 @@
     .footer
         &__additional
             margin-left: 20px
+    .reviews
+        &__text
+            max-width: 350px
+            width: 75%
+    .swiper
+        &-container
+            &-wrapper
+                max-width: 90%
 @media (max-width: 550px)
+    .container-title
+        font-size: 22px
+        line-height: 23px
     .header
         &__search
             &-mobile
@@ -387,6 +479,8 @@
     .hero
         &__left
             height: 250px
+    .profile__stars
+        margin-top: 5px
     .swiper-button
         &-prev-one
             left: 10px
@@ -444,16 +538,18 @@
             width: 90%
             margin: 0
             justify-self: center
-            align-self: end
+            align-self: start
             font-size: 12px
             line-height: 15px
             font-family: Mulish
         &__social-icons
             grid-column: 1/2
-            grid-row: 9 / 10
+            grid-row: 8 / 9
             margin-top: 0
-            align-self: start
+            align-self: end
             justify-self: start
+            margin-top: 25px
+            margin-left: 5px
         &__text
             &-another
                 line-height: 22.4px
@@ -476,9 +572,6 @@
             margin-top: -150px
         &__disclaimer-and-others
             width: 100%
-            align-self: start
-        &__social-icons
-            margin-top: -45px
     .text
         &-one
             margin-top: -3px
@@ -502,9 +595,40 @@
                 margin-top: 20px
             &:nth-last-child(2)
                 margin-top: 20px
+    .swiper
+        &-container
+            &-wrapper
+                max-width: 450px
+                width: 90%
+        &-button
+            &-prev
+                left: 44px
+                top: 80px
+                margin-top: -44px
+            &-next
+                right: 44px
+                top: 80px
+                margin-top: -44px
+    .profile
+        margin-left: 14px
+    .reviews
+        &__text
+            font-family: Mulish
+            font-size: 12px
+            line-height: 19.2px
+            text-align: left
+            width: 82%
+    label.invalid-messages
+        top: -33px
+        font-size: 13px
 @media (max-width: 400px)
     .container
         border: none
+        &-title
+            font-size: 18px
+            line-height: 23px
+            max-width: 245px
+            margin-bottom: 42px
     .header
         &__link-logo
             width: 99px
@@ -557,10 +681,43 @@
             margin-top: -3.5px
     .newsletter
         &__search
-            width: 87.5%
+            width: 100%
     .form
         &__input
             padding-left: 20px
+    .swiper
+        &-container
+            &-wrapper
+                width: 100%
+    .reviews
+        margin-bottom: 0
+        &__text
+            max-width: 219px
+    .activities
+        padding-top: 0
+        &__title
+            font-family: Mulish
+            font-weight: 700
+            font-size: 18px
+            line-height: 23px
+        &__one
+            order: 1
+        &__two
+            order: 3
+            margin-top: 28px
+        &__three
+            order: 2
+        &__four
+            order: 10
+    .footer
+        &-wrapper
+            margin-left: -5px
+        &__contact-details, &__contacts-form
+            margin-left: 5px
+    .modal
+        &__info
+            display: block
+            margin-top: 10px
 @media (max-width: 310px)
     .header
         &__search
