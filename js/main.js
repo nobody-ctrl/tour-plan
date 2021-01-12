@@ -15,23 +15,26 @@ closeModalButton.on('click', closeModal);
 function openModal(){
   var modalOverlay=$('.modal__overlay');
   var modalDialog=$('.modal__dialog');
-  modalOverlay.addClass('modal__overlay--visible')
-  modalDialog.addClass('modal__dialog--visible')
+  modalOverlay.addClass('modal__overlay--visible');
+  modalDialog.addClass('modal__dialog--visible');
+  $('body').toggleClass('body-hidden');
 }
 $(document).keyup(function(e) {
   if (e.key === "Escape") {
     var modalOverlay=$('.modal__overlay');
     var modalDialog=$('.modal__dialog');
-    modalOverlay.removeClass('modal__overlay--visible')
-    modalDialog.removeClass('modal__dialog--visible')
+    modalOverlay.removeClass('modal__overlay--visible');
+    modalDialog.removeClass('modal__dialog--visible');
+    $('body').toggleClass('body-hidden');
   }
 });
 function closeModal(event){
   event.preventDefault()
   var modalOverlay=$('.modal__overlay');
   var modalDialog=$('.modal__dialog');
-  modalOverlay.removeClass('modal__overlay--visible')
-  modalDialog.removeClass('modal__dialog--visible')
+  modalOverlay.removeClass('modal__overlay--visible');
+  modalDialog.removeClass('modal__dialog--visible');
+  $('body').toggleClass('body-hidden');
 }
 
 var mySwiperOne = new Swiper('.swiper-container-reviews', {
