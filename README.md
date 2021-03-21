@@ -1,13 +1,11 @@
-Tour Plan
+Tour Plan:
 
-Учебный проект для практики на курсе Веб Старт от Glo Academy. Автор курса — Артем Исламов.
+A training project for the course from the Glo Academy. The author of the course is Artem Islamov.
 
+The project is done by:
 
-Проект выполняет
+Petrova Anastasiia. Course number 10.
 
-Петрова Анастасия. Девятый поток курса Веб Старт. Тариф "Полный фарш" с куратором.
+Supervisor
 
-
-Куратор
-
-Мовсар Халахоев
+Movsar Halohoev
